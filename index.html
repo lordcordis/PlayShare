@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayShare</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            color: black;
+            background-color: white;
+            font-size: 1.5rem;
+        }
+
+        .top-title {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .top-title h2 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.75rem;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 20%;
+            height: auto;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-list, .built-with-list {
+            font-size: 1.5rem;
+            text-align: left;
+            line-height: 1.5;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .built-with {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .built-with label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.25rem;
+        }
+
+        .github-icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        /* Dark Mode Styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: white;
+                background-color: #121212; /* Dark background */
+            }
+
+            .top-title h2, .section-title {
+                color: #bb86fc; /* Accent color for titles */
+            }
+
+            .description {
+                color: #ffffff; /* White text for description */
+            }
+
+            .image-container img {
+                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Adjust image shadow for dark mode */
+            }
+
+            .feature-list, .built-with-list {
+                color: #e0e0e0; /* Lighter text for readability */
+            }
+
+            .footer a {
+                color: #bb86fc; /* Accent color for links */
+            }
+
+            .github-icon {
+                filter: invert(100%); /* Invert GitHub icon for dark mode */
+            }
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .description {
+                font-size: 1.25rem;
+            }
+            .image-container img {
+                width: 40%;
+            }
+            .feature-list, .built-with-list {
+                font-size: 1.25rem;
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .description {
+                font-size: 1rem;
+            }
+            .image-container img {
+                width: 80%;
+            }
+            .feature-list, .built-with-list {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-title">
+        <h2>PlayShare</h2>
+    </div>
+
+    <div class="description">
+        PlayShare is an iOS app designed to simplify the process of sharing physical copies of video games.
+    </div>
+
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots%20min/IMG_5190.png" alt="PlayShare Screenshot">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5238.PNG" alt="PlayShare Screenshot">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5237.PNG" alt="PlayShare Screenshot">
+        <img src="https://raw.githubusercontent.com/lordcordis/lordcordis.github.io/main/screenshots/IMG_5234.PNG" alt="PlayShare Screenshot">
+    </div>
+
+    <h2 class="section-title">Features</h2>
+    <div class="feature-list">
+        <strong>Advanced Search:</strong> Search for games in the PlayShare database or import from IGDB.<br>
+        <strong>Game Management:</strong> Add games to your shared list, wish list, or collection.<br>
+        <strong>User Matching:</strong> Find users sharing specific games in your city.<br>
+        <strong>Exchanges:</strong> Initiate and respond to exchanges with other users.<br>
+        <strong>Telegram Integration:</strong> Continue communicating via Telegram after initiating an exchange.<br>
+        <strong>Profile Management:</strong> Update your profile with game consoles, location, and Telegram username.<br>
+        <strong>Local Games:</strong> Find users nearby who share or want the same games.<br>
+        <strong>Exchange Tracker:</strong> Monitor your current, accepted, and archived exchanges in one place.<br>
+        <strong>Secure Authentication:</strong> Sign up using email/password, Google, or Apple accounts. Passwords are secured using Apple Keychain.
+    </div>
+
+    <h2 class="section-title built-with">Stack</h2>
+    <div class="built-with-list">
+        <label>SwiftUI, UIKit, Firebase, KeychainSwift, IGDB API, SDWebImage, SnapKit, ToastUI</label>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/lordcordis" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="github-icon">
+            https://github.com/lordcordis
+        </a>
+    </div>
+</body>
+</html>
