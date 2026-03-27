@@ -1,7 +1,3 @@
-Here’s a clean, App Store–ready **Privacy Policy** you can use for PlayShare:
-
----
-
 # Privacy Policy for PlayShare
 
 **Effective Date:** 27.03.2026
